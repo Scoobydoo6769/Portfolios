@@ -1,0 +1,75 @@
+# Series = A pandas 1-Dimensional labeled array that can hold any data type
+#          Think of it like a single column in a spreadsheet (1-Dimensional)
+# series.loc["c"] = enter a value, change the value without interferring the list
+# print(series.iloc[0]) = print the list member based on array index positioning
+# [series < 100] = print the value based on a arithmetics operator
+# series = pd.Series , import an series function
+# series = pd.Series(cat_breed, index=['1','2','3','4','5','6']), give the data a list number
+
+# DataFrames = A row of 2-Dimensional Columns
+# df["Column name"] = ["Column", "Column", "Column"]
+# df = pd.DataFrame(data) = import DataFrame function
+# new_row = pd.DataFrame([{"Name": "Loma", "Age": 16, "Job": "Musician"}],
+#                       index=["Employee 4"])
+# df = pd.concat([df, new_row]) = adding new row
+
+# Importing = import file into IDE output
+# df = pd.read_csv("file name") = import the csv file
+# df = pd.read_json("file name") = import the json file
+# print(df.to_string()) print out the file output 
+
+# Selection
+# SELECTION BY COLUMN
+# print(df["Name"].to_string())
+# print(df["Height"].to_string())
+# print(df["Weight"].to_string())
+# print(df[["Name", "Height", "Weight"]].to_string())
+
+# SELECTION BY ROW/S
+# print(df.loc["Pikachu":"Charizard", ["Height","Weight"]])
+# print(df.iloc[0:11:2, 0:3]), showing which column or row to show
+
+# Filtering = Keeping the rows that match a condition for example below:
+# heavy_pokemon = df[df["Weight"] >= 100]
+# legendary_pokemon = df[df["Legendary"]] == True]
+# water_pokemon = df[(df["Type 1"] == "Water") |
+#                    (df["Type 2"] == "Water")]
+# ff_pokemon = df[(df["Type1"] == "Fire") &
+#                (df["Type2"] == "Flying")]
+
+# Aggregation
+# Whole Dataframe
+# print(df.mean(numeric_only=True)) = Show overall values in the file
+# print(df.sum(numeric_only=True)) = Summarize all the value in the file
+# print(df.min(numeric_only=True)) = Show the minimum values in the file
+# print(df.max(numeric_only=True)) = Show the maximum values in the file
+# print(df.count()) = Count all the values in the file
+
+# Single Column
+# print(df["Height"].mean())
+# print(df["Height"].sum())
+# print(df["Height"].min())
+# print(df["Height"].max())
+# print(df["Height"].count())
+
+# Data cleaning
+# 1. Drop irrelevant columns
+# df = df.drop(columns=['Legendary', 'No']), Deleting a columns
+
+# 2. Handle missing data
+# df = df.dropna(subset=['Type2']), Delete an null value row
+# df = dr.fillna({'Type2': "None"})
+
+# 3. Fix inconsistent values
+# df['Type1'] = df['Type1'].replace({'Grass': 'GRASS',
+#                                   'Fire': 'FIRE',
+#                                   'Water': 'WATER'})
+
+# 4. Standardize text
+# df["Name"] = df["Name"].str.lower()
+
+# 5. Fix data types
+# df["Legendary"] = df["Legendary"].astype(bool)
+
+# 6. Remove duplicate values
+# df = df.drop_duplicates()
