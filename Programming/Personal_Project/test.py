@@ -1,4 +1,4 @@
-fruits = input("Select your fruits: ")
+fruits = input("Select your food: ")
 
 if fruits == 'mango':
     print("You like mango!")
