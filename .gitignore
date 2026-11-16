@@ -1,0 +1,33 @@
+# This repo lives in the home folder, so ignore everything by default
+# and only let the Portfolios project files through.
+/*
+
+# Files at the top level
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/streamlit_app.py
+
+# Dev container (the folder name ends with a space)
+!/.devcontainer\ /
+
+# Streamlit config only (never commit credentials.toml)
+!/.streamlit/
+/.streamlit/*
+!/.streamlit/config.toml
+
+# Claude/Streamlit_Practice
+!/Claude/
+/Claude/*
+!/Claude/Streamlit_Practice/
+
+# Programming/Personal_Project
+!/Programming/
+/Programming/*
+!/Programming/Personal_Project/
+
+# Junk inside the allowed folders
+.DS_Store
+.venv/
+__pycache__/
+.ipynb_checkpoints/
