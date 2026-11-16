@@ -1,5 +1,3 @@
-Lists = ['mango', 'apple', 'pineapple']
-
 fruits = input("Select your fruits: ")
 
 if fruits == 'mango':
