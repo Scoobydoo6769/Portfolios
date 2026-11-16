@@ -1,0 +1,152 @@
+# logical operator = evaluate multiple conditions (or, and, not)
+#                    or = at least one condition must be True
+#                    and = both conditions must be True
+#                    not = inverts the condition (not False, not True)
+
+# arithmetic & math
+# guitar = guitar + 1
+# guitar += 1
+# guitar = guitar -  2
+# guitar -= 2
+# guitar = guitar * 3
+# guitar *= 3
+# guitar = guitar / 2
+# guitar /= 2
+# guitar = guitar ** 2
+# guitar **= 2
+# remainder = friends % 2
+
+# result = round(x)
+# result = abs(y)
+# result = pow(4, 3)
+# result = max(x, y ,z)
+# result = min(x, y ,z)
+
+# type 'import math' first to use the following feature:
+# print(math.pi)
+# print(math.e)
+# result = math.sqrt(x) a square root
+# result = math.ceil(x) ex.converting from 9.1 to maximum value (10)
+# result = math.floor(x) ex.eliminate the decimal point from the number (9.9 to 9)
+
+# conditional expression = A one-line shortcut for the if-else statement (ternary operator)
+#                          Print or assign one of the two values based on a condtition
+#                          X if condition else Y
+# print("Positive" if num > 0 else "Negative")
+# result = "EVEN" if num % 2 == 0 else "ODD"
+# max_num = a if a > b else b
+# min_num = a if a < b else b
+# status = "Adult" if age >= 18 else "Child"
+# weather = "HOT" if temperature > 20 else "COLD"
+# example of the code, access_level = "Full Access" if user_role == "admin" else "Limited Access"
+
+# conditional expressions
+# len(name) = count the string character starting from 1 (ex. guitar = 6 character)
+# name.find(" ") = find specific character positions contained in quote, it always start in 0 (array mathod)
+# name.rfind(" ") = same as the above one, but will return "-1" result if it can't find it character
+# name.capitalize() = upper cased the first letter in the sentences
+# name.upper() = upper cased the whole sentences
+# name.lower() = lower cased the whole sentences, even though all sentences are upper cased
+# name.isdigit() = Return false result if it detect character, Return true result if it only number
+# name.isalpha() = must be only character and alphabet, else would be resulted in False
+# name.count("-") = count the specific letter in the quote
+# name.replace("-", " ") = replace the specific letter in the quote with another given letter in the quote
+# print(help(str)) = help commands in python, in case things go wrong
+
+# indexing = accessing elements of a sequence using [] (indexing operator )
+#            [start : end : step]
+# print(id_number[0])
+# print(id_number[:4])
+# print(id_number[5:9])
+# print(id_number[5:])
+# print(id_number[-1])
+# print(id_number[::3])
+
+# format specifiers = {value:flags} format a value based on what
+#                      flags are inserted
+# .(number)f = round to that many decimal places (fixed point)
+# :(number) = allocate that many spaces
+# :03 = allocate and zero that many spaces
+# :< = left justify
+# :> = right justtify
+# :^ = center align
+# :+ = use a plus sign to indicate positive value
+# := = place sign to leftmost position
+# :  = insert a space before positive numbers
+# :, = comma separator
+
+# while loop = execute some code WHILE some condition remains true
+
+# for loops = execute a block of code a fixed number of items.
+#             You can iterate over a range, string, sequence, etc.
+
+# nested loop = A loop within another loop (outer, inner)
+#               outer loop:
+#                   inner loop:
+
+# collection = single "variable" used to store multiple values
+#.  List = [] ordered and changeable. Duplicates OK
+#.  Set = {} unordered and immutable, but Add/Remove OK. NO duplicates
+#.  Tuple = () ordered and unchangeable. Duplicates OK. FASTER
+
+# dictionary = a collection of {key:value} pairs
+#              ordered and changeable. No Duplicates
+# print(dir(capitals)
+# print(help(capitals))
+# print(capitals.get("Japan"))
+
+# if capitals.get("Russia"):
+#    print("That capital exists")
+# else:
+#    print("That capital doesn't exists")
+
+# capitals.update({"Germany": "Berlin"})
+# capitals.update({"USA": "Detroit"})
+# capitals.pop("China")
+# capitals.popitem()
+# capitals.clear()
+
+# keys = capitals.keys()
+# for key in capitals.keys():
+#   print(key)
+
+# values = capitals.values()
+# for value in capitals.values():
+# print(value)
+
+# if capitals.get("Russia"):
+#    print("That capital exists")
+# else:
+#    print("That capital doesn't exists")
+
+# random number
+# import random <- type this first
+# number = random.randint(low, high)
+# number = random.random
+# option = random.choice(options)
+
+# function = A block of reusable code
+#            place () after the function name to invoke it
+
+# return = statement used to end a function
+#          and send a result back to the caller
+
+# default arguments = A default value for certain parameters
+#                     default is used when that argument is omitted
+#                     make your functions more flexible, reduces # of arguments
+
+# keyword arguments = an argument preceded by an identifiers
+#                     helps with readability
+# *args = allows you to pass multiple non-key aruguments
+# **kwargs = allows you to pass multiple keyword-arguments
+# * unpacking operator
+#                     order of arguments doesn't matter
+#                     1. positional 2. default 3. KEYWORD 4. arbitrary
+
+# List comprehension = A consise way to create lists in python
+#                      Compact and easier to read than traditional loops
+#                      [Expression for value in iterable if condition]
+
+# exception = An event that interrupts the flow of a program
+#             (ZeroDivisionError, TypeError, ValueError)
+#             1.try, 2.except, 3.finally
